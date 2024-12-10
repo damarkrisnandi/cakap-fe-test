@@ -1,0 +1,34 @@
+<div class="carousel-container">
+  <button mat-icon-button aria-label="Previous" (click)="prev()">
+    <mat-icon aria-hidden="false" fontIcon="chevron_left"></mat-icon>
+  </button>
+
+  <!-- Wrapper untuk track carousel -->
+  <div class="carousel-wrapper">
+    <div class="carousel-track" [style.transform]="getTransform()">
+      <mat-card *ngFor="let item of items; let i = index" class="carousel-item">
+        <mat-card-header>
+          <mat-card-title>{{ item.title }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content style="height: 100%">
+          <div class="flex" *ngIf="item.company">
+            <mat-icon aria-hidden="false" fontIcon="apartment"></mat-icon>
+            <p>{{ item.company }}</p>
+          </div>
+        </mat-card-content>
+        <mat-card-footer>
+          <mat-chip-set>
+            <mat-chip style="font-size: xx-small">{{ item.jobtype }}</mat-chip>
+            <mat-chip *ngIf="item.city && item.country" style="font-size: xx-small" class="flex centered">
+                {{ item.city }}, {{ item.country}}
+            </mat-chip>
+          </mat-chip-set>
+        </mat-card-footer>
+      </mat-card>
+    </div>
+  </div>
+
+  <button mat-icon-button aria-label="Next" (click)="next()">
+    <mat-icon aria-hidden="false" fontIcon="chevron_right"></mat-icon>
+  </button>
+</div>

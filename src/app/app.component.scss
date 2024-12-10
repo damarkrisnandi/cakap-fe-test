@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  div {
+    h1 {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+}
