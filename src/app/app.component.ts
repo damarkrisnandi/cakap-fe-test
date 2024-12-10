@@ -23,7 +23,6 @@ export class AppComponent implements OnInit{
 
   ngOnInit(): void {
     this.jobsService.getAll()
-    .pipe()
     .subscribe({
       next: (v) => {
         for (const item of v) {
