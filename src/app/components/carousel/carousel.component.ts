@@ -47,7 +47,7 @@ export class CarouselComponent implements OnInit, OnDestroy{
   }
 
   startAutoSlide() {
-    const time = 4000;
+    const time = 7000;
 
     this.autoSlideSubscription$ = interval(time)
     .subscribe({
