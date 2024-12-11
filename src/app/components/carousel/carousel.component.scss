@@ -1,3 +1,9 @@
+@use "sass:math";
+
+$item_width: 300px;
+$item_height: 200px;
+$show_number: 3;
+
 .carousel-container {
   position: relative;
   display: flex;
@@ -15,15 +21,15 @@
 
     .carousel-track {
       display: flex;
-      width: 900px;
+      width: $item_width * $show_number;
       transition: transform 300ms ease-in-out;
 
       .carousel-item {
-        flex: 0 0 33.333%; /* Menampilkan 4 item dalam satu baris */
+        flex: 0 0 math.percentage(math.div(1,$show_number));
         box-sizing: border-box;
         padding: 10px;
-        width: 300px;
-        height: 200px;
+        width: $item_width;
+        height: $item_height;
         // margin-right: 10px;
         // background-color: rgb(219, 219, 219);
       }
