@@ -1,5 +1,7 @@
 # CakapFeTest
-[![This is how I run the project]](https://raw.githubusercontent.com/damarkrisnandi/cakap-fe-test/master/videos/20241211_002038.mp4)
+
+## Additional Video
+This is how I run the project. [Click here](https://raw.githubusercontent.com/damarkrisnandi/cakap-fe-test/master/videos/20241211_002038.mp4)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.1.
 
