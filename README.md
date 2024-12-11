@@ -3,7 +3,7 @@
 ## Additional Video
 This is how I run the project. [Click here](https://raw.githubusercontent.com/damarkrisnandi/cakap-fe-test/master/videos/20241211_002038.mp4)
 
-<video controls src="https://raw.githubusercontent.com/damarkrisnandi/cakap-fe-test/master/videos/20241211_002038.mp4" width="640" height="240" controls>
+<video controls src="https://raw.githubusercontent.com/damarkrisnandi/cakap-fe-test/master/videos/20241211_002038.mp4" width="640" height="240" controls></video>
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.1.
