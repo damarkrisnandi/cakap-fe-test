@@ -1,7 +1,8 @@
 # CakapFeTest
 
 ## Additional Video
-This is how I run the project. 
+This is how I run the project. [Click here](https://raw.githubusercontent.com/damarkrisnandi/cakap-fe-test/master/videos/20241211_002038.mp4)
+
 <video controls src="https://raw.githubusercontent.com/damarkrisnandi/cakap-fe-test/master/videos/20241211_002038.mp4" width="640" height="240" controls>
 
 
