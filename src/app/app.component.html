@@ -1,6 +1,6 @@
-<div class="container" *ngFor="let cat of cat_keys">
-  <div>
-    <h1>{{ cat }}</h1>
-    <app-carousel [items]="categories[cat]"/>
+<div class="container" *ngFor="let cat of cat_keys; let index = index">
+  <div [id]="'cat_' + cat_ids[index]">
+    <h1 [id]="'title_' + cat_ids[index]">{{ cat }}</h1>
+    <app-carousel [items]="categories[cat]" [id]="'carousel_' + cat_ids[index]"/>
   </div>
 </div>

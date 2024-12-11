@@ -16,6 +16,7 @@ export class AppComponent implements OnInit{
   jobs = [];
   categories = {} as any;
   cat_keys: string[] = [];
+  cat_ids: string[] = []
 
   constructor(
     private jobsService: JobService
@@ -31,6 +32,7 @@ export class AppComponent implements OnInit{
             (this.categories as any)[title].push(item)
           } else {
             (this.categories as any)[title] = [item]
+            this.cat_ids.push(item.cat_id || '0');
           }
         }
         this.cat_keys = Object.keys(this.categories);
